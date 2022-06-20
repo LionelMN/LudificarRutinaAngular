@@ -1,0 +1,23 @@
+<div class="userContainer"
+ [ngClass]="{'closed' : isClosed, 'maxOpen' : isMaxed}"
+ draggable="true"
+ (drag)="onDrag($event)"
+ (dragend)="onDragEnd($event)"
+ >
+  <div class="userInformation"
+  [ngClass]="{'closed' : isClosed, 'maxOpen' : isMaxed}"
+  [ngStyle]="{'width' : dragX}">
+    <img src="assets/images/{{user?.imagen}}" [alt]="user?.nombre">
+    <p class="userName" >{{user?.nombre}}</p>
+    <p class="userPuntuation">Puntuación: {{user?.puntuacion}} </p>
+    <div class="rutinaFlex">
+      <div *ngFor="let rutina of user?.rutinas">
+        <app-progress-bar [rutina]="rutina"></app-progress-bar>
+      </div>
+    </div>
+  </div>
+  <div class="closeButton" >
+    <button (click)="openClose()">Hide</button>
+    <button (click)="MaxView()">Max</button>
+  </div>
+</div>

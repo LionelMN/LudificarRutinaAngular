@@ -1,0 +1,22 @@
+<circle-progress
+  [animation]="true"
+  [animationDuration]="300"
+  [clockwise]="true"
+  innerStrokeColor="#A9A8A8"
+  [innerStrokeWidth]="6"
+  [outerStrokeColor]="color"
+  [outerStrokeWidth]="8"
+  [percent]="(terminadas/rutina!.tareas.length)*100"
+  [radius]="80"
+  [showSubtitle]="false"
+  [showUnits]="true"
+  [space]="-7"
+  [titleColor]="'#ffffff'"
+  [titleFontSize]="'24px'"
+  [titleFontWeight]="'bold'"
+  [unitsColor]="'#ffffff'"
+  [unitsFontSize]="'24px'"
+  [unitsFontWeight]="'bold'"
+>
+</circle-progress>
+<p>Terminadas {{terminadas}} tarea de {{rutina!.tareas.length}}</p>

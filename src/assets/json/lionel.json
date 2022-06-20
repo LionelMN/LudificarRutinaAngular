@@ -1,0 +1,58 @@
+{
+  "nombre" : "Lionel",
+  "imagen" : "ProfileImage.jpg",
+  "puntuacion" : 0,
+  "rutinas" : [
+    {
+      "nombre" : "Rutina 1",
+      "descripcion" : "string",
+      "tareas" : [
+        {
+          "nombre" : "Tarea 1",
+          "descripcion" : "string",
+          "puntos" : 50,
+          "terminado" : false
+        },
+        {
+          "nombre" : "Tarea 2",
+          "descripcion" : "string",
+          "puntos" : 50,
+          "terminado" : true
+        },
+        {
+          "nombre" : "Tarea 2",
+          "descripcion" : "string",
+          "puntos" : 50,
+          "terminado" : true
+        }
+      ]
+    },
+    {
+      "nombre" : "Rutina 2",
+      "descripcion" : "string",
+      "tareas" : [
+        {
+          "nombre" : "Tarea 1",
+          "descripcion" : "string",
+          "puntos" : 50,
+          "terminado" : false
+        }
+      ]
+    },
+    {
+      "nombre" : "Rutina 3",
+      "descripcion" : "string",
+      "tareas" : [
+        {
+          "nombre" : "Tarea 1",
+          "descripcion" : "string",
+          "puntos" : 50,
+          "terminado" : true
+        }
+      ]
+    }
+  ],
+  "premios" : [
+
+  ]
+}
