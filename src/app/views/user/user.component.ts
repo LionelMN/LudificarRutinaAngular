@@ -39,13 +39,13 @@ export class UserComponent implements OnInit {
 
   onDrag(event : DragEvent){
     event = event || window.event;
-    if(event.screenX > 180){
-      this.dragX = event.screenX + 'px';
+    if(event.x > 180){
+      this.dragX = event.x + 'px';
     }
   }
 
   onDragEnd(event: DragEvent) {
-    this.dragX = event.screenX + 'px';
+    this.dragX = event.x + 'px';
   }
 
 }
